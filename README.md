@@ -1,2 +1,2 @@
-# Sarathi
-This website is specially made for Status code 1
+# holistic-wellness
+Full page website with vanilla css 
