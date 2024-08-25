@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Depression Prediction Quiz</h1>
+    <form method="POST" action="/predict">
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" required><br>
+
+        <label for="Marital_Status">Marital Status:</label>
+        <input type="text" id="Marital_Status" name="Marital_Status" required><br>
+
+        <label for="Education_Level">Education Level:</label>
+        <input type="text" id="Education_Level" name="Education_Level" required><br>
+
+        <label for="Number_of_Children">Number of Children:</label>
+        <input type="number" id="Number_of_Children" name="Number_of_Children" required><br>
+
+        <label for="Smoking_Status">Smoking Status:</label>
+        <input type="text" id="Smoking_Status" name="Smoking_Status" required><br>
+
+        <label for="Physical_Activity_Level">Physical Activity Level:</label>
+        <input type="text" id="Physical_Activity_Level" name="Physical_Activity_Level" required><br>
+
+        <label for="Employment_Status">Employment Status:</label>
+        <input type="text" id="Employment_Status" name="Employment_Status" required><br>
+
+        <label for="Income">Income:</label>
+        <input type="number" id="Income" name="Income" step="0.01" required><br>
+
+        <label for="Alcohol_Consumption">Alcohol Consumption:</label>
+        <input type="text" id="Alcohol_Consumption" name="Alcohol_Consumption" required><br>
+
+        <label for="Dietary_Habits">Dietary Habits:</label>
+        <input type="text" id="Dietary_Habits" name="Dietary_Habits" required><br>
+
+        <label for="Sleep_Patterns">Sleep Patterns:</label>
+        <input type="text" id="Sleep_Patterns" name="Sleep_Patterns" required><br>
+
+        <label for="History_of_Substance_Abuse">History of Substance Abuse:</label>
+        <input type="text" id="History_of_Substance_Abuse" name="History_of_Substance_Abuse" required><br>
+
+        <label for="Family_History_of_Depression">Family History of Depression:</label>
+        <input type="text" id="Family_History_of_Depression" name="Family_History_of_Depression" required><br>
+
+        <label for="Chronic_Medical_Conditions">Chronic Medical Conditions:</label>
+        <input type="text" id="Chronic_Medical_Conditions" name="Chronic_Medical_Conditions" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>{{ result }}</h2>
+</body>
+</html>
