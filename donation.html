@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation page</title>
+    <link rel="stylesheet" href="donation.css">
+    <link rel="icon" href="IMG\NEW LOGO.png" type="image/x-icon">
+</head>
+<body>
+
+    
+    
+    
+
+
+    <div class="container">
+        <header>
+            <h1>Mental Health Awareness Donation</h1>
+            <p>Your support can make a difference in someone's life.</p>
+
+        </header>
+
+        
+        <section class="donation-form">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="amount">Donation Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="$0.00" min="1" required>
+
+                <button type="submit">Donate Now</button>
+            </form>
+
+            <p id="successMessage" class="success-message"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
